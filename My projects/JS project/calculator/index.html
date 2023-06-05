@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <div class="box">
+    <h2>Calculator</h2>
+    <form>
+        <p>Insert Number</p>
+        <input type="text" class="Nr1">
+        <p>Insert Number</p>
+        <input type="text" class="Nr2">
+    </form>
+    <select id="operator">
+        <p> Operator is : </p> 
+        <option value="add">Add</option>
+        <option value="min">Minus</option>
+        <option value="div">Divide</option>
+        <option value="mul">Multiply</option>
+    </select>
+    <button type="button" onclick="calc()">Calculate</button>
+    <div class="Res">Result is: </div>
+   </div>
+   <script src="/app.js"></script>
+</body>
+</html>

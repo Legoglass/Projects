@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="/main.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Our Company Logo">
+      </header>
+ 
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+      </nav>
+ 
+        <h1>Home</h1>
+ 
+        <section>
+          <h2>Main content</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vehicula quam eros, eget condimentum augue dictum sed. Vivamus blandit purus nibh, sit amet molestie felis sollicitudin id. Morbi tortor enim, varius eget gravida eu, dictum in velit. Suspendisse sit amet metus aliquet, viverra est id, efficitur diam. Integer laoreet nisi arcu, a venenatis nisl convallis a. Cras malesuada lobortis ex. Praesent vel massa a eros dignissim commodo. Ut justo purus, tincidunt ut ultrices ac, ultrices eget tellus. Cras sodales libero sed velit aliquet condimentum.</p>
+ 
+        </section><aside>
+            <h2>Side content</h2>
+            <p>Pellentesque sem dolor, tempus at felis quis, dignissim lacinia enim. Curabitur non efficitur eros. Praesent pretium neque diam, non sollicitudin purus vulputate sed. Vestibulum posuere tincidunt commodo. Aliquam nec neque feugiat, gravida mi quis, pellentesque lacus. Cras mollis odio ac dignissim tincidunt. Phasellus sed blandit eros. Donec malesuada lectus vel massa ultricies, sed rhoncus nulla vestibulum. Mauris vulputate ac ipsum at elementum. Proin aliquam sit amet justo dapibus cursus. Donec id dignissim arcu. Sed sed justo in lectus efficitur maximus.</p>
+        </aside>
+ 
+
+        <div id="box1">red
+        </div>
+         
+        <div id="box2">green
+        </div>
+         
+        <div id="box3">blue
+        </div>
+
+      <form>
+        Value 1: <input type="text" id="value1">
+        Value 2: <input type="text" id="value2">
+        Operator: 
+        <select id="operator">
+          <option value="add">ADD</option>
+          <option value="min">MINUS</option>
+          <option value="div">DIVIDE</option>
+          <option value="mul">MULTIPLY</option>
+        </select>
+        <button type="button" onclick="calc()">Calculate</button>
+      </form>
+
+      <div id="result"></div>
+ 
+      <footer>
+        Copyright © Link Group
+      </footer>
+      <script>
+        var today = new Date();
+          var day = today.getDay();
+          var daylist = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
+          console.log("Today is:" + daylist[day] + ".");
+      </script>
+      </body>
+</body>
+</html>

@@ -1,0 +1,427 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Braah+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    transition: 0.2s ease-in-out;
+    color: #000;
+}
+/**----------------------NAV-BAR------------------**/
+::-webkit-scrollbar-thumb{
+    background-color: blueviolet;
+}
+
+section{
+    padding: 2rem 9%;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.heading h1{
+    padding-bottom: 2rem;
+}
+
+.heading p{
+    max-width: 60rem;
+    margin: auto;
+    font-size: 1.7rem;
+}
+
+.all-btn{
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+    background-color: var(--Soft-Blue);
+    border-radius: .5rem;
+    color: #fff;
+}
+
+.all-btn:hover{
+    background-color: transparent;
+    color: var(--Soft-Blue);
+    border: 2px solid var(--Soft-Blue);
+}
+
+.header{
+    display: flex;
+    background-color: blueviolet;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    box-shadow: 0rem 0.5rem 1.5rem rgba(0, 0, 0, 1);
+    padding: 3rem 9%;
+}
+
+.header .logo{
+    cursor: pointer;
+}
+.header .menu{
+    float: left;
+}
+.header .menu a{
+    margin-left: 2rem;
+    font-size: 1.7rem;
+    text-transform: uppercase;
+}
+
+.header .menu .btn{
+    padding: .6rem 3rem;
+    color: #fff;
+    border-radius: .5rem;
+    background-color: rgb(231, 103, 103);
+}
+
+.header .menu .btn:hover{
+    background-color: transparent;
+    border: 2px solid rgb(231, 103, 103);
+}
+
+#menu-btn{
+    padding: 1rem 1rem;
+    background-color: #eee;
+    font-size: 3rem;
+    border-radius: .5rem;
+    cursor:pointer;
+    display: none;
+}
+/**----------------------END NAV-BAR------------------**/
+
+/**----------------------ALL CONTENT------------------**/
+.content{
+    margin-top: 200px;
+    display:grid;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+    grid-template-rows: auto ;
+}
+
+@media only screen and (max-width:800px) {
+    .content{
+        padding-left: 2vh;
+    }
+    
+}
+/**----------------------END ALL CONTENT------------------**/
+
+/**----------------------SECTION HOME------------------**/
+.Home{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    display: flex;
+    /*display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-rows: 100px 100px 100px 100px;*/
+    margin-bottom: 50px;
+}
+
+.texti{
+    font-size: 2rem;
+    grid-row-start: 3 ;
+    grid-row-end: 5 ;
+    grid-column-end: 3;
+    grid-column-start: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family: 'Braah One', sans-serif;
+    color: #6d6c6c;
+    padding: 10px 10px 10px 10px;
+}
+.texti h2{
+    color: rgb(91, 29, 148);
+}
+.texti p{
+    color: rgb(170, 87, 248);
+}
+
+.img{
+    display: flex;
+    justify-content: center;
+}
+/**----------------------END SECTION HOME------------------**/
+
+/**----------------------SECTION FETURES------------------**/
+.Fetures{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
+/**----------------------(S.F) FIRST SECTION------------------**/
+.First-section{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;  
+    grid-template-rows: 1fr 0.25fr 0.25fr;
+}
+.textf{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-family: 'Braah One', sans-serif;
+    color: #6d6c6c;
+    font-size: 2rem;
+    padding: 10px 10px 10px 10px;
+}
+
+.textf h2{
+    color: rgb(91, 29, 148);
+}
+.textf p{
+    color: rgb(170, 87, 248);
+}
+
+.img1{
+    width: 100%;
+}
+
+.content1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 2rem;
+    font-family: 'Braah One', sans-serif;
+    padding-top: 50px;
+}
+
+.content1 h2{
+    color: rgb(91, 29, 148);
+}
+
+.content1 p{
+    color: rgb(170, 87, 248);
+}
+.content2{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.content2 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 2rem;
+    font-family: 'Braah One', sans-serif;
+    padding-top: 50px;
+}
+
+.content2 h2{
+    color: rgb(91, 29, 148);
+}
+
+.content2 p{
+    color: rgb(170, 87, 248);
+}
+
+
+/**----------------------END (S.F) FIRST SECTION------------------**/
+
+/**----------------------SECOND SECTION------------------**/
+
+.Second-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: auto;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+.img2{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.img3{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+}
+
+.content3{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 2rem;
+    font-family: 'Braah One', sans-serif;
+    padding-top: 50px;
+
+}
+
+.content3 h2{
+    color: rgb(91, 29, 148);
+}
+
+.content3 p{
+    color: rgb(170, 87, 248);
+}
+/**----------------------END SECOND SECTION------------------**/
+
+/**----------------------DOWNLOAD SECTION------------------**/
+
+.Download{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+
+}
+.Download{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.textd{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 2rem;
+    font-family: 'Braah One', sans-serif;
+    padding-top: 50px;
+}
+
+.textd h2{
+    color: rgb(91, 29, 148);
+}
+
+.textd p{
+    color: rgb(170, 87, 248);
+}
+/**----------------------(D. S.) CARD SECTION------------------**/
+
+.box{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    border-radius: .5rem ;
+    border: 2px solid rgb(231, 103, 103);
+    padding: 10px 10px;
+    margin: 50px 0px;
+    width: 300px;
+}
+
+.box img{
+    padding: 10px 0px;
+}
+
+.box h3{
+    font-size: 2rem;
+    font-family: 'Braah One', sans-serif;
+    padding: 10px 0px;
+    color: rgb(91, 29, 148);
+}
+
+.box p{
+    font-size: 1.3rem;
+    font-family: 'Braah One', sans-serif;
+    color: rgb(170, 87, 248);
+}
+
+/**---------------------- FOOTER ------------------**/
+.Contact{
+    background-color: blueviolet;
+    
+}
+.box-container{
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.box-c{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-between;
+    
+}
+
+/**---------------------- BTN STYLES------------------**/
+.all-btn{
+    color: #000;
+    margin: 10px 0;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    color: #fff;
+    border-radius: .5rem;
+    background-color: rgb(231, 103, 103);
+}
+
+.all-btn:hover{
+    background-color: transparent;
+    border: 2px solid rgb(231, 103, 103);
+    color: rgb(91, 29, 148);
+    }
+
+.btn-int:hover{
+    color: rgb(91, 29, 148);
+}
+
+/**---------------------- END BTN STYLES------------------**/
+
+
+
+
+
+
+
+
+
+
+/**.Home{
+    padding-top: 15rem;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+.img{
+    grid-row-start:2;
+    grid-row-end: ;
+    grid-column-start:3 ;
+    grid-column-end: 11;
+}
+
+.texti{
+    grid-row-start:5;
+    grid-row-end: ;
+    grid-column-start:3 ;
+    grid-column-end: ;
+    z-index: 1;
+
+}**/
+/*.texti{
+    grid-row: 1 / 2;
+}
+
+.img{
+    grid-row: 1 / 3 ;
+}*/

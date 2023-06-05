@@ -1,0 +1,54 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Braah+One&family=Reem+Kufi+Fun:wght@600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: aliceblue;
+    font-family: 'Reem Kufi Fun', sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: minmax(90vh , 400px);
+    margin: auto;
+    margin-top: 30vh;
+}
+.title{
+    margin: 30px 0px;
+    font-size: 3rem;
+}
+
+#value{
+    margin: 20px 0;
+    font-size: 3rem;
+}
+.button-container *{
+    letter-spacing: 3px;
+    background: transparent;
+    padding: 10px;
+    border-radius: 10px ;
+    border: solid black 3px;
+    margin: 30px 30px;
+    font-size: 1em;
+    font-weight: 200;
+}
+
+.button-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+}
+
+.button-container *:hover{
+    background-color: black;
+    color: white;
+}

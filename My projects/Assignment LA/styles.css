@@ -1,0 +1,21 @@
+
+    @import url('https://fonts.googleapis.com/css2?family=Tinos&display=swap');
+    html{
+        font-family: 'Tinos', serif;
+        letter-spacing: 1px;
+        color: rgb(79, 82, 79);
+    }
+
+    .nav-bar li a:visited {
+        color: rgb(79, 82, 79);
+    }
+    .nav-bar li a:hover{
+        color: black;
+    }
+
+    .nav-bar ul li{
+        list-style: none;
+    }
+    a:link{
+        text-decoration: none;
+    }

@@ -1,0 +1,281 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+body{
+  background-image: url("blob-scene-haikei.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+  font-family: 'Righteous', cursive;
+}
+ 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+nav{
+  position:fixed;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  justify-content: space-around;
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(20px);
+  font-size: 1.2em;
+  
+}
+nav h2{
+  font-size: 1.2em;
+}
+.navbar{
+  color: white;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px 0;;
+}
+
+.social-icons{
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  size: 100px;
+}
+.social-icons li i{
+  color: white;
+}
+a:link{
+  text-decoration: none;
+}
+
+.social-icons li:hover{
+  color: blue;
+  animation: font 1s both;
+}
+
+#fb:hover{
+  color: blue;
+}
+
+#ig:hover{
+  color: rgb(236, 41, 138);
+}
+
+#tw:hover{
+  color: rgb(99, 144, 241);
+}
+
+#in:hover{
+  color: rgb(85, 153, 241);
+}
+.links {
+  display: flex;
+  gap: 20px;
+  
+}
+
+.links a {
+  color: white;
+  padding: 0 10px;
+}
+
+.links:hover a{
+  color: rgb(70, 71, 107);
+}
+.links a:hover{
+  color: rgb(182, 62, 122);
+  animation: font 1s forwards ;
+}
+.btn{
+  display: none;
+}
+#tg{
+  font-size: 20px;
+  padding: 2px;
+}
+@media screen and (max-width: 750px) {
+.btn{
+  display: block;
+}
+.links{
+  position: fixed;
+  right: -100%;
+  top: 100px;
+  gap: 20px;
+  padding: 10px 0;
+  flex-direction: column;
+  width: 200px;
+  text-align: center;
+  transition: .5s;
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(20px);
+  animation: fadeIN .7s;
+  
+}
+
+.links a{
+  padding: 10px 0;
+}
+.social-icons{
+  display: none;
+}
+.show-links{
+  right: 0;
+  top: 100px;
+  animation: fadeIN .7s;
+  
+
+}
+}
+
+@keyframes fadeIN {
+  0% {opacity: 0%;}
+  100% {opacity: 100%;}
+}
+
+@keyframes up-bump {
+  0% { padding-top: 15px; }
+  50% { padding-top: 5px; }
+  100% { padding-top: 15px; }
+}
+
+@keyframes font {
+  0% { font-size: 1em;}
+  50% { font-size: 1.3em;}
+  100% {font-weight: 1.6em;}
+}
+
+/*@keyframes fadeIN {
+  30% {opacity: 30%;}
+  60% {opacity: 60%;}
+}
+@keyframes fadeIN {
+  80% {opacity: 80%;}
+  100% {opacity: 100%;}
+}*/
+
+
+
+/*section {
+    padding: 5rem 0;
+  }
+  
+  .section-center {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1170px;
+  }
+  @media screen and (min-width: 992px) {
+    .section-center {
+      width: 95vw;
+    }
+  }
+  main {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+  }
+  
+  /*
+  =============== 
+  Navbar
+  ===============
+  */
+/*nav {
+    background: var(--clr-white);
+    box-shadow: var(--light-shadow);
+  }
+  .left-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  .nav-toggle {
+    font-size: 1.5rem;
+    color: var(--clr-primary-5);
+    background: transparent;
+    border-color: transparent;
+    transition: var(--transition);
+    cursor: pointer;
+  }
+  .nav-toggle:hover {
+    color: var(--clr-primary-1);
+    transform: rotate(90deg);
+  }
+  .logo {
+    height: 40px;
+  }
+  .links a {
+    color: var(--clr-grey-3);
+    font-size: 1rem;
+    text-transform: capitalize;
+    letter-spacing: var(--spacing);
+    display: block;
+    padding: 0.5rem 1rem;
+    transition: var(--transition);
+  }
+  .links a:hover {
+    background: var(--clr-primary-8);
+    color: var(--clr-primary-5);
+    padding-left: 1.5rem;
+  }
+  .social-icons {
+    display: none;
+  }
+  .links {
+    height: 0;
+    overflow: hidden;
+    transition: var(--transition);
+  }
+  .show-links {
+    height: 10rem;
+  }
+
+  @media screen and (min-width: 800px) {
+    .navbar {
+      max-width: 1170px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem;
+    }
+    .left-navbar {
+      padding: 0;
+    }
+    .nav-toggle {
+      display: none;
+    }
+    .links {
+      height: auto;
+      display: flex;
+    }
+    .links a {
+      padding: 0;
+      margin: 0 0.5rem;
+    }
+    .links a:hover {
+      padding: 0;
+      background: transparent;
+    }
+    .social-icons {
+      display: flex;
+    }
+    .social-icons a {
+      margin: 0 0.5rem;
+      color: var(--clr-primary-5);
+      transition: var(--transition);
+    }
+    .social-icons a:hover {
+      color: var(--clr-primary-7);
+    }
+  }
+
