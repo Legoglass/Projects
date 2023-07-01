@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Abril+Fatface&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'ABeeZee', sans-serif;
+    color: rgb(83, 81, 81);
+}
+
+body{
+    background-color: rgb(235, 229, 229);
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    text-transform: capitalize;
+}
+
+.img-c{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(81, 149, 238) ;
+    text-transform: capitalize;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.img-c > .img-t{
+    display: flex;
+    width: 100%;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px;
+}
+
+h4{
+    align-items: center;
+    justify-content: center;
+}
+
+.img-c img{
+    width: 250px;
+}
+
+.gallery-container{
+    display: grid;
+    padding: 50px 50px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    justify-content: center;
+}
+
+.paragraf{
+    margin: 0 50px;
+}
+
