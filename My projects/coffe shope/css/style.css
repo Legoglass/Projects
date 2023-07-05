@@ -62,3 +62,10 @@ header a:visited{
 #intro-section{
     background-color: #eae7de;
 }
+
+/************************ABOUT  SECTION*****************************/
+
+#about-bg-1{
+    background-image: url(../img/great-place.jpg);
+    width: 200px;
+}
