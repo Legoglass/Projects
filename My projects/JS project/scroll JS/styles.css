@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+    scroll-behavior: smooth;
+}
+
+.nav-container{
+    position: fixed;
+    width: 100%;
+    top:0;
+    left: 0;
+}
+.nav-center{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: transparent;
+}
+
+ .links > li:hover{
+    animation: zoom 0.5s linear ;
+}
+
+.test{
+    background-color: rgb(141, 233, 205);
+}
+
+.logo{
+    width: 80px;
+    padding: 10px 0px;
+}
+
+.nav-toggle {
+    background: transparent;
+    border-color: transparent;
+    cursor: pointer;
+    display: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    padding-bottom: 5px;
+}
+
+.links{
+    display: flex;
+    gap: 20px;
+}
+
+.links:hover a{
+    color: black;
+}
+
+.links a:hover{
+    color: white;
+    border-bottom: solid 1px white;
+}
+
+.main-container{
+    background:linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
+    url(./photo/hero-bcg.jpeg);
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    color: aliceblue;
+}
+
+.banner{
+    margin: 0 50px;
+}
+.banner h2{
+    width: auto;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+.banner p{
+    text-transform: capitalize;
+    width: auto;
+    max-width: 50rem;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+.btn{
+    color: aliceblue;
+    letter-spacing: 5px;
+    border: 1px white solid;
+    padding: 5px 10px;
+}
+
+.About ,.Services ,.Tours
+{
+    height: 100vh;
+    background-color:#fefeff;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-around;
+
+}
+
+.Services{
+    background: rgb(238, 238, 238);
+}
+
+span{
+    color: rgb(141, 233, 205);
+}
+
+.footer{
+    background-color: rgb(141, 233, 205);
+    padding: 30px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.top-link {
+    font-size: 1.25rem;
+    position: fixed;
+    bottom: 2rem;
+    right: 3rem;
+    padding: 5px;
+    background: black;
+    width: 2rem;
+    height: 2rem;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    color: white;
+    animation: bounce 1s linear infinite;
+    visibility: hidden;
+    z-index: -100;
+  }
+
+  .show-link {
+    visibility: visible;
+    z-index: 100;
+  }
+
+@media screen and (max-width: 650px) {
+    *{
+        font-size: 1rem;
+    }
+    header{
+        height: 100%;
+    }
+    
+    .links-container{
+        animation: dropDown 2s linear;
+        display: none;
+    }
+
+    .links-mobile{
+        display: block;
+        position: absolute;
+        width: 100%;
+        background-color: rgb(141, 233, 205);
+        z-index: -1;
+        animation: dropDown 300ms linear ;
+    }
+
+    .links{
+        margin-top: 550px;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        align-items: center;
+    }
+
+    .links li a{
+        font-size: 2rem
+    }
+
+    .nav-toggle{
+        display: block;
+    }
+
+    .banner {
+        margin: 0 20px;
+        margin-bottom: 2rem;
+    }
+    .logo{
+        width: 50px;
+    }
+}   
+
+
+@keyframes retract {
+    0%{
+        transform: scaleY(1) ;
+    }
+    80%{
+        transform: scaleY(1.1) ;
+    }
+    0%{
+        transform: scaleY(0%);
+    }
+    
+}
+
+@keyframes dropDown {
+    0% {
+        transform: scaleY(0)
+    }
+    80% {
+        transform: scaleY(1.1)
+    }
+    100% {
+        transform: scaleY(1)
+    }
+}
+
+@keyframes bounce {
+
+    0% {
+        transform:translateY(0)
+    }
+    80% {
+        transform: translateY(5px)
+    }
+
+    60% {
+        transform: translateY(-5px)
+    }
+    100% {
+        transform: translateY(0)
+    }
+    
+}
+
+@keyframes zoom {
+
+    0%{
+        font-size: scale(1);
+    }
+
+    50%{
+        transform: scale(1.1);
+    }
+
+    100%{
+        transform: scale(1);
+    }
+    
+}
