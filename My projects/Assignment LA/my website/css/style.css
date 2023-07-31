@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p{
+    color: var(--bs-gray-500);
+}
+
+#header{
+    background-color: white;
+}
+
+#links {
+    display: flex;
+    align-items: center;
+}
+
+#links a{
+    color: var(--bs-gray-500);
+    margin-left: 24px;
+}
+
+#links a:visited{
+    color: var(--bs-gray-500);
+}
+
+#links a:hover{
+    color: black;
+}
+
+/*********************************HERO SECTION*********************************/
+
+#m-hero{
+    background-color: green;
+    color: white;
+    max-width: fit-content;
+    padding: 1em;
+    font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 450px) {
+    #m-hero{
+        font-size: 0.8em;
+    }
+    
+}
+
+.row{
+    margin: 0;
+}
+
+#logo{
+    font-size: 1.5em;
+}
+
+
+/*********************************WORK SECTION*********************************/
+
+/*********************************FOOTER SECTION*********************************/
+
+#footer{
+    background-color: rgb(82, 80, 80);
+    color: white;
+}
+
+#copy{
+    background-color: rgb(27, 27, 27);
+}
+
+#f-links a{
+    color: var(--bs-gray-500);
+    margin-left: 24px;
+}
+
+#f-links a:visited{
+    color: var(--bs-gray-500);;
+}
+
+#f-links a:hover{
+    color: var(--bs-gray-500);
+}
+
