@@ -8,21 +8,51 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 
-    <title>Document</title>
+    <title>Coffee shop</title>
 </head>
 <body>
+    <div id="mobile-menu">
+        <a id="close-btn" href="#"><img src="img/close-btn.png" alt="close"></a>
+        <div class="container">
+            <div class="row vh-100 align-items-center">
+                <div class="col-12 text-center">
+                    <nav>
+                        <div>
+                            <a class=" mobile-menu-item text-decoration-none text-uppercase h3" href="#intro-section">about</a>
+                        </div>
+                        <div class="my-3">
+                            <a class=" mobile-menu-item text-decoration-none text-uppercase h3" href="#menu-section">products</a>
+                        </div>
+                        <div class="mb-3">
+                            <a class=" mobile-menu-item text-decoration-none text-uppercase h3" href="#contact">contact</a>
+                        </div>
+                        <div>
+                            <a class=" mobile-menu-item text-decoration-none text-uppercase h3" href="#map">how to find
+                                    us?</a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <header class="p-3" id="header">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-4">
-                    <img id="header-logo" src="img/header-logo.png" alt="coffe shope header logo">
+                    <img id="header-logo"  src="img/header-logo.png" alt="coffe shope header logo">
                 </div>
                 <div class="col-8 text-end">
-                    <a class="text-decoration-none text-uppercase" href="#">about</a>
-                    <a class="text-decoration-none text-uppercase" href="#">products</a>
-                    <a class="text-decoration-none text-uppercase" href="#">contact</a>
-                    <a class="text-decoration-none text-uppercase" href="#">how to finde us?</a>
+                    <div id="btn " class="d-lg-none btn">
+                       <a href="#" id="menu-btn">  <img id="img" class="img-fluid" src="img/menu.png" alt="menu"> </a>
+                    </div>
+                    <div class="links">
+                        <a class="text-decoration-none text-uppercase" href="#ntro-section">about</a>
+                        <a class="text-decoration-none text-uppercase" href="#menu-section">products</a>
+                        <a class="text-decoration-none text-uppercase" href="#contact">contact</a>
+                        <a class="text-decoration-none text-uppercase" href="#map">how to finde us?</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -34,8 +64,8 @@
             <div class="row vh-100 align-items-center pb-5">
                 <div class="col-12 text-center">
                     <img id="hero-logo" src="img/logo.png" alt="coffe shope logo">
-                    <h1 class="display-2 fw-bolder">THE HOME OF COFFE</h1>
-                    <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis suscipit architecto et beatae quaerat! Accusamus ratione repellat recusandae nostrum optio laudantium!</p>
+                    <h1 class="display-2 fw-bolder mb-5">THE HOME OF COFFE</h1>
+                    <p class="lead ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis suscipit architecto et beatae quaerat! Accusamus ratione repellat recusandae nostrum optio laudantium!</p>
                 </div>
             </div>
 
@@ -45,7 +75,7 @@
 
 
     <section id="intro-section" class="py-5">
-        <div class="container-fluid text-black py-5">
+        <div class="container-fluid text-black ">
             <div class="row ">
                 <div class="col-6  offset-3 text-center py-5">
                     <h2 class=" fw-bolder text-uppercase">the best coffe shop</h2>
@@ -71,26 +101,140 @@
 
 
     <section id="about-section">
-        <div class="container-fluid ">
-            <div class="row">
-                <div class="col-sm-12 col-lg-6 p-5 align-self-center ">
+        <div class="container-fluid p-0">
+            <div class="row ">
+                <div class="col-sm-12 col-xl-6 p-5 align-self-center ">
                     <h2 class="fw-bolder text-uppercase">fresh beans</h2>
                     <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur minus molestias inventore laborum quisquam quas, rem nisi incidunt minima commodi autem necessitatibus non enim accusamus voluptas? Id aspernatur voluptas harum.</p>
                     <button class="btn btn-primary">FINDE OUT MORE</button>
                 </div>
-                <div class="col-4">
-
+                <div class="d-none d-xl-block col-6 p-0">
+                    <img class="img-fluid" src="img/great-place.jpg" alt="great-place">
                 </div>
             </div>
-            <div class="row">
-                <div class="col-6">
-
-                </div>
+            <div class="row no-gutters">
+                <div class="col-12  p-5 d-flex align-items-center justify-content-end" id="fresh-beans" >
+                    <div class=" col-12 col-xl-6 offset-lg-3 ">
+                        <h2 class="fw-bolder text-uppercase ">great coffe</h2>
+                        <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est voluptatum fugiat obcaecati unde fuga debitis quidem error animi eaque nihil, assumenda minus consectetur, velit dolorum voluptatem vitae, reiciendis odit. Obcaecati!</p>
+                        <button class="btn btn-primary">FINDE OUT MORE</button>
+                    </div>   
+                </div>        
             </div>
         </div>
     </section>
     
-    <script> src="js/jquery-3.7.0.slim.min.js" </script>
+    <section id="menu-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 text-center pt-5">
+                    <h2 class="fw-bolder text-uppercase">section from our menu</h2>
+                    <p class="text-muted mt-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus minus quam commodi quod impedit nulla mollitia consequuntur est dolor.</p>
+                </div>
+            </div>
+            <div class="row  mt-5 pb-5 justify-content-center ">
+                <div class=" col-8 col-lg-3 text-center mx-lg-5 mt-5">
+                    <img class="img-fluid" src="img/coffee-item-1.png" alt="coffee-item-1">
+                    <h2 class="text-uppercase">black cake</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, nostrum laboriosam illum tenetur eligendi odio a maxime in sequi iusto reprehenderit sit facilis. </p>
+                    <h2>$4</h2>
+                </div>
+                <div class=" col-8 col-lg-3 text-center mx-lg-5 mt-5 ">
+                    <img class="img-fluid" src="img/coffee-item-2.png" alt="coffee-item-1">
+                    <h2 class="text-uppercase">black cake</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, nostrum laboriosam illum tenetur eligendi odio a maxime in sequi iusto reprehenderit sit facilis. </p>
+                    <h2>$4</h2>
+                </div>
+                <div class=" col-8 col-lg-3 text-center mx-lg-5 mt-5">
+                    <img class="img-fluid" src="img/coffee-item-3.png" alt="coffee-item-1">
+                    <h2 class="text-uppercase">black cake</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, nostrum laboriosam illum tenetur eligendi odio a maxime in sequi iusto reprehenderit sit facilis. </p>
+                    <h2>$4</h2>
+                </div>
+                <div class=" col-8 col-lg-3 text-center mx-lg-5 mt-5">
+                    <img class="img-fluid" src="img/coffee-item-4.png" alt="coffee-item-1">
+                    <h2 class="text-uppercase">black cake</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, nostrum laboriosam illum tenetur eligendi odio a maxime in sequi iusto reprehenderit sit facilis. </p>
+                    <h2>$4</h2>
+                </div>
+                <div class=" col-8 col-lg-3 text-center mx-lg-5 mt-5">
+                    <img class="img-fluid" src="img/coffee-item-5.png" alt="coffee-item-1">
+                    <h2 class="text-uppercase">black cake</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, nostrum laboriosam illum tenetur eligendi odio a maxime in sequi iusto reprehenderit sit facilis. </p>
+                    <h2>$4</h2>
+                </div>
+                <div class=" col-8 col-lg-3 text-center mx-lg-5 mt-5">
+                    <img class="img-fluid" src="img/coffee-item-6.png" alt="coffee-item-1">
+                    <h2 class="text-uppercase">black cake</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, nostrum laboriosam illum tenetur eligendi odio a maxime in sequi iusto reprehenderit sit facilis. </p>
+                    <h2>$4</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="img-fluid">
+        <div class="continer-fluid ">
+            <div class="row">
+                <div class="col-12 col-lg-5 offset-lg-1 pt-5">
+                    <div class="container">
+                        <div class="row pt-3">
+                            <h2 class="text-uppercase">you are welcome!</h2>
+                            <p class="text-uppercase">come on in!</p>
+                        </div>
+                        <div class="row pt-3">
+                            <h2 class="text-uppercase">weekdays</h2>
+                            <p class="text-uppercase">08am-12pm</p>
+                        </div>
+                        <div class="row pt-3">
+                            <h2 class="text-uppercase">weekends</h2>
+                            <p class="text-uppercase">12pm-02am</p>
+                        </div>
+                    </div>
+                </div>
+                <div class=" col-12 col-lg-5 offset-lg-1  pt-2" id="info-contact">
+                    <div class="container  ">
+                        <div class="row pt-3">
+                            <h2 class="text-uppercase">contact</h2>
+                        </div>
+                        <div class="row pt-3">
+                            <h2 class="text-uppercase">phone</h2>
+                            <p class="text-uppercase">074 111 845 644</p>
+                        </div>
+                        <div class="row pt-3">
+                            <h2 class="text-uppercase">mail</h2>
+                            <p class="text-uppercase">coffeshope@contact.com</p>
+                        </div>
+                        <div class="row pt-3">
+                            <h2 class="text-uppercase">address</h2>
+                            <p class="text-uppercase">56a , black street , uk</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="container-fluid" id="map">
+                <div class="row">
+                    <div class="col-12" id="map-col">
+                        <iframe id="map-g" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3970.766086810926!2d27.972689673619282!3d45.27295045021087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sro!2sro!4v1691515159167!5m2!1sro!2sro" width="100%" height="450px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-around text-center py-2" id="footer">
+                <div class="col-lg-4 col-12 py-4 p-lg-0 d-flex justify-content-center align-items-center ">
+                    <p class="text-uppercase m-0">coffe shop <span>&#169</span> 2023 M.D. right reserved</p>
+                </div>
+                <div class="col-lg-4 col-12 pb-3 p-lg-0">
+                    <img class="px-2 img-fluid" src="img/twitter-icon.png" alt="twitter-icon">
+                    <img class="px-2 img-fluid" src="img/phone-icon.png" alt="twitter-icon">
+                    <img class="px-2 img-fluid" src="img/instagram-icon.png" alt="twitter-icon">
+                    <img class="px-2 img-fluid" src="img/facebook-icon.png" alt="twitter-icon">
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.slim.js" integrity="sha256-7GO+jepT9gJe9LB4XFf8snVOjX3iYNb0FHYr5LI1N5c=" crossorigin="anonymous"></script>
     <script> src="js/bootstrap.bundle.main.js" </script>
 </body>
 </html>
