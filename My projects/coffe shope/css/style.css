@@ -112,7 +112,7 @@ header a:visited{
 /************************CONTACT SECTION *****************************/ 
 
 #contact{
-    background-image: url(/img/contact-img.jpg);
+    background-image: url(../img/contact-img.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
