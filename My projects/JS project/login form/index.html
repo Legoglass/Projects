@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />        <link rel="stylesheet" href="styles.css"> 
+        <title>Assignment 2 - Website Building</title>
+        <style>
+            body {
+                box-sizing: border-box;
+                font-family: sans-serif;
+            }
+
+            #login-container {
+                width: 460px;
+                margin: 0 auto;
+            }
+
+            form label,
+            form input {
+                width: 100%;
+                box-sizing: border-box;
+            }
+
+
+            form input {
+                padding: 8px;
+            }
+
+            form label {
+                font-weight: bold;
+            }
+
+            form div {
+                margin: 16px 0px;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div id="login-container">
+
+            <form id="login-form">
+                <div class="input-container">
+                    <label for="username">Username:</label>
+                    <input id="username" type="text">
+                    <span class="material-symbols-outlined" id="icon">
+                        
+                        </span>
+                </div>
+
+                <div class="input-container">
+                    <label for="password">Password:</label>
+                    <input id="password" type="password">
+                    <span class="material-symbols-outlined" id="iconp">
+                        
+                        </span>
+                </div>
+
+                <input type="submit" value="Login">
+            </form>
+
+        </div>
+
+
+    
+    <script src="https://code.jquery.com/jquery-3.7.0.slim.js" integrity="sha256-7GO+jepT9gJe9LB4XFf8snVOjX3iYNb0FHYr5LI1N5c=" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+    </body>
+</html>

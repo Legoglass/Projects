@@ -1,0 +1,24 @@
+.input-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+
+input[type="text"] {
+    padding-right: 30px; 
+}
+
+
+.material-symbols-outlined {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    color: green; 
+    display: none;
+}
+
+
+.material-symbols-outlined {
+    display: inline-block;
+    right: 10px; 
+}

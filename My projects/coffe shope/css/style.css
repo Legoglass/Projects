@@ -5,6 +5,7 @@
     font-family: 'Oswald' , sans-serif;
 }
 
+
 /************************HEDER*****************************/
 
 header {
@@ -12,6 +13,15 @@ header {
     left: 0;
     right: 0;
     z-index: 1;
+}
+
+.solid-header{
+    position: fixed;
+    background: #3f372d75;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.1px);
+    -webkit-backdrop-filter: blur(7.1px);
+    transition: background-color 0.5s ease;
 }
 
 #header-logo{
@@ -61,4 +71,127 @@ header a:visited{
 
 #intro-section{
     background-color: #eae7de;
+}
+
+#fresh-beans{
+    background-image: url(../img/fresh-beans.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    height: 100vh;
+
+}
+
+@media screen and (max-width: 1200px ) {
+    #fresh-beans {
+        background-image: none;
+        height: auto;
+        
+    }
+    #fresh-beans p {
+        color: rgb(107, 107, 107);
+    }
+}
+
+@media screen and (min-width: 1200px ) {
+    #fresh-beans {
+   color: white;
+    }
+
+
+}
+
+
+
+/************************MENU SECTION *****************************/
+
+#menu-section{
+    background-color:  #eae7de;
+}
+
+/************************CONTACT SECTION *****************************/ 
+
+#contact{
+    background-image: url(/img/contact-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    color: white;
+}
+
+#info-contact{
+    height: 50vh;
+    background-color: #3f372dbe ;
+}
+
+#map , #map-col{
+    padding: 0;
+
+}
+
+#map-g{
+    height: 450px;
+}
+
+#footer{
+    background-color: #463528;
+}
+
+#btn{
+    display: none;
+}
+
+@media screen and (max-width: 1200px ){
+    #contact {
+        height: 100vh;
+    }
+}
+
+@media screen and (max-width : 1000px) {
+    #btn{
+        display: block;
+        position: fixed;
+        z-index: 1;
+    }
+    
+    .links{
+        display: none;
+    }
+}
+
+#mobile-menu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: #3f372d75;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.1px);
+    -webkit-backdrop-filter: blur(7.1px);
+    z-index: 2;
+    display: none;
+}
+
+#mobile-menu a {
+    color: white;
+}
+
+#mobile-menu a:hover {
+    color: rgb(175, 171, 171);
+}
+
+#mobile-menu #close-btn {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    
+}
+
+#img{
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    width: 30px;
 }
