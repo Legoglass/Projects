@@ -8,6 +8,7 @@ export function MealDetail({
   setQuantity,
   handeleAddDinner,
   handeleAddLunch,
+  day,
 }) {
   return (
     <div className="button-82">
@@ -24,7 +25,7 @@ export function MealDetail({
           <p> Dish Type : {recipe.dishType[0]}</p>
           <p>Cuisine Type : {recipe.cuisineType}</p>
         </div>
-        <p className="ingredients">
+        <p className="ingredients d-none d-sm-block">
           {" "}
           <span>The ingredients for the recipe are: </span>
           {`${recipe.ingredientLines.join(" , ")}`}
@@ -58,21 +59,23 @@ export function MealDetail({
           className="button-87"
           onClick={handleCloseMoreDetail}
         />
-        <div className="add-meal-container">
+        <div className="add-to-meal-container">
           <Button
             name="Add to breakfast"
             className="button-87"
-            onClick={() => handleAddBreakfast(recipe)}
+            onClick={() => {
+              handleAddBreakfast(day, recipe, quantity);
+            }}
           />
           <Button
             name="Add to lunch"
             className="button-87"
-            onClick={() => handeleAddLunch(recipe)}
+            onClick={() => handeleAddLunch(day, recipe, quantity)}
           />
           <Button
             name="Add to dinner"
             className="button-87"
-            onClick={() => handeleAddDinner(recipe)}
+            onClick={() => handeleAddDinner(day, recipe, quantity)}
           />
         </div>
       </li>

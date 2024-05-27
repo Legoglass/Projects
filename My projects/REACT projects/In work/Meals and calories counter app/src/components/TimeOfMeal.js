@@ -6,12 +6,10 @@ export function TimeOfMeal({
   recipes,
   handleDeleteLunch,
   handeleDeleteDinner,
-  mealsByDay,
-  day,
 }) {
   return (
-    <div>
-      <h2>{meal}</h2>
+    <div className="col-md-4 col-12 d-flex flex-column align-items-center">
+      <h2 className="mt-5">{meal}</h2>
       {recipes.length > 0 ? (
         recipes.map((recipe) => (
           <div key={recipe.recipe.label}>
@@ -25,7 +23,9 @@ export function TimeOfMeal({
           </div>
         ))
       ) : (
-        <div></div>
+        <div>
+          <p>no meal yet</p>
+        </div>
       )}
     </div>
   );
