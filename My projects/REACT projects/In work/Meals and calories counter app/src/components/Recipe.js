@@ -11,6 +11,7 @@ export function Recipe({
   setQuantity,
   handeleAddDinner,
   handeleAddLunch,
+  day,
 }) {
   return (
     <>
@@ -24,7 +25,9 @@ export function Recipe({
             Calories :
             {`${Math.round((recipe.calories / recipe.totalWeight) * 100)}`}/100g
           </p>
-          <p> Dish Type : {recipe.dishType[0]}</p>
+          {recipe && recipe.dishType && recipe.dishType.length > 0 && (
+            <p>Dish Type: {recipe.dishType[0]}</p>
+          )}
           <p>Cuisine Type : {recipe.cuisineType}</p>
         </div>
         <p className="ingredients">
@@ -47,6 +50,7 @@ export function Recipe({
           setQuantity={setQuantity}
           handeleAddDinner={handeleAddDinner}
           handeleAddLunch={handeleAddLunch}
+          day={day}
         />
       )}
     </>
